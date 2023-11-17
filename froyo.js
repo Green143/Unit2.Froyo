@@ -2,9 +2,9 @@ const flavors = window.prompt("enter some flavors","vanilla,vanilla,vanilla,stra
 console.log(flavors) // should get back all of the flavors
 
 const flavorsArr = flavors.split(",")
-console.log(flavorsArr) //should get an array for all of the flavors
+console.log(flavorsArr) //should split up the array for all of the flavors
 
-
+// write a function to show how many of each flavor is being ordered
 function getStats(flavorsArr){
     const stats = {}
     for(let i = 0; i < flavorsArr.length; i++){
@@ -18,20 +18,4 @@ function getStats(flavorsArr){
   }
   console.log(getStats(flavorsArr))
 
-  /*const arr2 = "vanilla, vanilla, vanilla, strawberry,coffee,coffee"
-  const stats = getStats(arr2)
-  console.log(stats)
-
-  /*const str2 = "This is a sentence!"
-  const stats = getStats(str2)
-  console.log(stats)
-
-
-/*function getSum(obj) {
-    let sum =0;
-    for(let key in obj){
-    sum += obj[key]
-}
-    return sum
-}
-console.log(getSum(flavorType)*/
+ 
